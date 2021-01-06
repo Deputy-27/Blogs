@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid</title>
+</head>
+<body>
+
+<article class="first">
+    <div>123</div>
+    <img src="https://picsum.photos/1200/400" alt="Logo">
+    <div>1234</div>
+</article>
+
+<article class="second">
+    <div>123</div>
+    <img src="https://picsum.photos/1201/400" alt="Logo">
+    <div>1234</div>
+</article>
+
+</body>
+
+<style>
+    body{
+        display:grid;
+        /*grid-auto-flow: row;*/
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 5px;
+    }
+    img{
+        width:100%;
+    }
+    .first{
+        border: 1px solid black;
+        background-color: #EEE90E;
+    }
+
+    .second{
+        border: 1px solid black;
+        background-color: #C22323;
+    }
+</style>
+</html>

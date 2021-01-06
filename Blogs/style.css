@@ -1,0 +1,202 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Rage Italic", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+section{
+    padding: 20px;
+}
+/*NAVIGATION*/
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2.5%;
+    margin: 10px ; /*top left right bottom*/
+    background-color: darkgray;
+    max-width: 1260px;
+    width: 100%;
+    height: 150px;
+}
+.nav-header li{
+    display: inline-flex;
+}
+.nav-header li a {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin: 0 70px 0;
+}
+.nav-header li a:hover{
+    color: tomato;
+}
+#logo{
+    cursor: pointer;
+}
+/*CONTENT*/
+.hero h1{
+    text-align: center;
+}
+.hero a{
+    font-weight: bold;
+}
+.hero a:hover{
+    color: tomato;
+}
+.cta a{
+    font-weight: 600 ;
+}
+.cta a:hover{
+    background-color: gold;
+}
+/*POSTS*/
+.posts article:nth-of-type(odd){
+    background-color: lightgrey;
+}
+.posts img{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    //width: 20%;
+}
+.posts a{
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+    font-weight: bold;
+    color: indigo;
+}
+.posts a:hover{
+    color: tomato;
+}
+.posts article {
+    margin: 10px 0 10px;
+}
+.posts time{
+    font-weight: 600;
+    padding: 20px;
+}
+/*ABOUT*/
+.about{
+    border-top: 1px solid lightgrey ;
+    border-bottom: 1px solid lightgrey ;
+}
+.about h2{
+    text-align: center;
+}
+.about p{
+    text-align: center;
+    text-shadow: 2px 2px 2px darkkhaki;
+    font-size: 1.3em;
+    font-family: "Times New Roman", sans-serif;
+}
+.about button{
+    font-family: "Roboto Thin", sans-serif;
+    color: #C22323;
+    border: 2px solid;
+    font-size: 1.3em;
+    padding: 0.3em 0.3em;
+    border-radius: 0.3em;
+    background: none;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.25s;
+}
+.about button:hover{
+    border-color: #EEE90E;
+    color: black;
+    box-shadow: 0 0.5em 0.5em -0.4em #EEE90E;
+    transform: translateY(-0.5em);
+    cursor: pointer;
+}
+/*PROJECTS*/
+.projects{
+    display: grid;
+    background-color: lightgrey;
+    margin: 20px 20px 20px 40px;
+    /*grid-gap: 50px 50px; !*rows columns *!*/
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center; /*row axis*/
+    /*align-items: stretch; !*columns axis*!*/
+}
+.projects time {
+    font-style: italic;
+    font-weight: 400;
+}
+.projects h2{
+    color: chocolate;
+}
+.projects a{
+    color: blue;
+    font-weight: 600;
+}
+.projects a:hover{
+    font-weight: 800;
+    color: tomato;
+}
+/*FOOTER*/
+footer p{
+    text-align: center;
+}
+/*CONTACTS*/
+#contact-header{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2.5em;
+}
+.forms label{
+    font-weight: bold;
+    color: tomato;
+    margin: 10px;
+}
+.forms textarea{
+    margin: 5px 0 0 10px;
+    font-style: italic;
+}
+.forms input{
+    margin: 5px 0 0 10px;
+    text-align: center;
+    font-style: italic;
+}
+.forms button{
+    font-size: 1.4em;
+    font-style: oblique;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin-left: 10px;
+}
+.forms button:hover{
+    background-color: darkgoldenrod;
+    border-radius: 1px;
+}
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: darkgray;
+}
+/*telephone*/
+.contacts a:nth-of-type(1){
+display: block;
+}
+/*email*/
+.contacts a:nth-of-type(2){
+display: block;
+}
+/*github*/
+.contacts a:nth-of-type(3){
+display: block;
+}
+/*codepen*/
+.contacts a:nth-of-type(4){
+display: block;
+}
+.contacts img {
+}
